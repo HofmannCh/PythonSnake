@@ -60,7 +60,7 @@ class Window():
     def __loop(self):
         if(self.logic.loop()):
             self.draw()
-            self.tk.after(200 - self.logic.countApple * 4, self.__loop)
+            self.tk.after(200, self.__loop)
         else:
             self.elStartBtn.config(text="Start", fg="green")
 
